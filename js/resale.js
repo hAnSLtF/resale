@@ -13,7 +13,6 @@
         $(that).parents('li').find('.dialog').removeClass('active');
     });
     $('body').on('click', '.back', function () {
-        alert(1);
         var index = $('ul li:visible').index();
         $('ul li').eq(index - 1).show();
         $('ul li:visible').eq(-1).removeClass('active');
